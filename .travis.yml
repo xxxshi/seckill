@@ -1,13 +1,17 @@
 language: java
-services:
-	- mysql
-test:
-  adapter: mysql2
-  database: seckill
-  username: root
-  encoding: utf8
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server
+      - mysql-client
+
 before_install:
-	- sudo mysql -e 'CREATE DATABASE seckill;'
+  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('12301') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
+  - sudo mysql_upgrade -u root -p 12301
+  - sudo service mysql restart
+
 jdk:
  - openjdk8
 install:  mvn install -DskipTests=true -Dmaven.javadoc.skip=true
