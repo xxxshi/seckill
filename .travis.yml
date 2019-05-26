@@ -1,6 +1,13 @@
 language: java
 services:
 	- mysql
+test:
+  adapter: mysql2
+  database: seckill
+  username: root
+  encoding: utf8
+before_install:
+	- sudo mysql -e 'CREATE DATABASE seckill;'
 jdk:
  - openjdk8
 install:  mvn install -DskipTests=true -Dmaven.javadoc.skip=true
