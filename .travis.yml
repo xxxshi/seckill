@@ -1,4 +1,6 @@
 language: java
+services:
+	- mysql
 jdk:
  - openjdk8
 install:  mvn install -DskipTests=true -Dmaven.javadoc.skip=true
