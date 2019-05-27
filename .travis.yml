@@ -2,18 +2,17 @@ language: java
 addons:
   apt:
     sources:
-      - mysql-5.7-trusty
+    - mysql-5.7-trusty
     packages:
-      - mysql-server
-      - mysql-client
-
+    - mysql-server
+    - mysql-client
 before_install:
-  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('12301') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
-  
-  - sudo service mysql restart
-
+- openssl aes-256-cbc -K $encrypted_b69481b66723_key -iv $encrypted_b69481b66723_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('12301')
+  where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
+- sudo service mysql restart
 jdk:
- - openjdk8
-install:  mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+- openjdk8
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 script: true
-
