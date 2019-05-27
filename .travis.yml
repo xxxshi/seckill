@@ -34,7 +34,7 @@ branchs:
     - master
 
 install:  mvn install -DskipTests=true -Dmaven.javadoc.skip=true
-script: - ssh xxxshi@47.99.204.53 -o StrictHostKeyChecking=no 'cd /developer/ && ./seckill.sh master tomcat7_1'
+script: true
 
 after_success:
   # 登录服务器，执行部署脚本，其实最好把后面一串写成 shell 文件
