@@ -4,20 +4,6 @@ addons:
     sources:
     - mysql-5.7-trusty
     packages:
-<<<<<<< HEAD
-    - mysql-server
-    - mysql-client
-before_install:
-- openssl aes-256-cbc -K $encrypted_b69481b66723_key -iv $encrypted_b69481b66723_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
-- sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('12301')
-  where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
-- sudo service mysql restart
-jdk:
-- openjdk8
-install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true
-script: true
-=======
       - mysql-server
       - mysql-client
     ssh_known_hosts:
@@ -54,4 +40,3 @@ after_success:
   # 登录服务器，执行部署脚本，其实最好把后面一串写成 shell 文件
   - ssh xxxshi@47.99.204.53 -o StrictHostKeyChecking=no 'cd /developer/ && ./seckill.sh master tomcat7_1'
 
->>>>>>> e7699ea695a8b8bf96a7f29994b787f9fc682bff
