@@ -16,7 +16,9 @@ before_install:
 
     # 因为我们把 id_rsa.enc 移到了.travis 文件夹下，所以 -in 后面要改成 .travis/id_rsa.enc
     # 其次，-out 后面自动生成的是 ~\/.ssh/id_rsa，要把 \ 去掉，否则会编译失败
-    - openssl aes-256-cbc -K $encrypted_XXXXXXXXXXXX_key -iv $encrypted_XXXXXXXXXXXX_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+    - openssl aes-256-cbc -K $encrypted_b69481b66723_key -iv $encrypted_b69481b66723_iv
+      -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+
     # 开启 ssh-agent，即允许使用 ssh 命令
     - eval "$(ssh-agent -s)"
     # 给予 id_rsa 文件权限，避免警告
