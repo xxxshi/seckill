@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97cde2fe-f2fa-454a-82e8-e776c3857dd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="234">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -104,7 +105,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559054480885" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559055366438" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -140,12 +141,12 @@
       <workItem from="1558842514585" duration="4247000" />
       <workItem from="1558926764877" duration="13761000" />
       <workItem from="1559045533990" duration="717000" />
-      <workItem from="1559050652161" duration="3555000" />
+      <workItem from="1559050652161" duration="4431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25854000" />
+    <option name="totallyTimeSpent" value="26730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -232,8 +233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="234">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
         </state>
       </provider>
     </entry>
