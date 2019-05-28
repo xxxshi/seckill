@@ -4,9 +4,8 @@ jdk:
 branchs:
   only:
   - master
-
-
 script: true
+
 after_success:
 - ssh xxxshi@47.99.204.53 -o StrictHostKeyChecking=no 'cd /developer/ && ./seckill.sh
   master tomcat7_1'
