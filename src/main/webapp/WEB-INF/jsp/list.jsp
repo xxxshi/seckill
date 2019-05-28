@@ -14,15 +14,10 @@
     <%@include file="common/head.jsp" %>
 </head>
 <body>
-
-<h2>2019.5.28</h2>
-
-
-
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-heading text-center">
-            <h2>秒杀列表</h2>
+            <h2>秒杀列表2019.5.28</h2>
         </div>
         <div class="panel-body">
             <table class="table table-hover">
