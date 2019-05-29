@@ -10,6 +10,6 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 after_success:
-- ssh xxxshi@47.99.204.53 -o StrictHostKeyChecking=no 'cd /developer/git-repository/seckill && git pull'
+- ssh xxxshi@47.99.204.53 -o StrictHostKeyChecking=no 'cd /developer/git-repository/seckill && ./seckill.sh master tomcat7_1'
 addons:
   ssh_known_hosts: 47.99.204.53
