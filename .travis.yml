@@ -12,6 +12,6 @@ before_install:
  - chmod 600 ~/.ssh/id_rsa
 
 after_success:
-- ssh xxxshi@47.99.204.53  'cd /developer/git-repository/ && git init'
+- ssh xxxshi@47.99.204.53  -o StrictHostKeyChecking=no 'cd /developer/git-repository/ && git init'
 addons:
   ssh_known_hosts: 47.99.204.53
