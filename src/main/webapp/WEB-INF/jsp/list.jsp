@@ -17,7 +17,7 @@
 <div class="container">
     <div class="panel panel-default">
         <div class="panel-heading text-center">
-            <h2>秒杀列表2019.06.05 自动化部署第二次测试 </h2>
+            <h2>秒杀列表2019.06.05 自动化部署第三次测试 </h2>
         </div>
         <div class="panel-body">
             <table class="table table-hover">
